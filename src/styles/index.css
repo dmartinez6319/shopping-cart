@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    /* outline: solid 1px red; */
 }
 
 :root {
@@ -26,4 +26,10 @@
 body {
   margin: 0;
   background-color: var(--bg-dark);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }

@@ -20,7 +20,7 @@ nav {
 }
 
 .cartIcon:hover {
-    transform: scale(1.2); /* Makes it pop when hovered */
+    transform: scale(1.2); 
 }
 
 .navLink {
@@ -37,5 +37,5 @@ nav {
 
 .navLink:hover {
     background-color: var(--bg-surface);
-    transform: scale(1.2); /* Makes it pop when hovered */
+    transform: scale(1.2); 
 }

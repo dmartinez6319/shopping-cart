@@ -1,14 +1,10 @@
-* {
-    /* outline: solid red 1px; */
-}
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 50dvh; */
     gap: 2rem;
-    
+    flex: 1;
 }
 
 .displayText {
@@ -47,13 +43,18 @@ main {
   width: 500px;
   height: 500px;
   background-color: var(--text-main); /* The color you WANT */
-  
-  /* The image acts as a stencil */
-  -webkit-mask-image: url('../assets/shopper.png');
-  mask-image: url('../assets/shopper.png');
-  
-  mask-size: contain;
-  mask-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 16rem;
+
+}
+
+img {
+    width: 400px;
+    height: 400px;
 }
 
 @media (max-width: 900px) {

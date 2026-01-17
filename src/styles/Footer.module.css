@@ -1,0 +1,22 @@
+footer {
+    width: 100dvw;
+    border-top: solid 1px var(--accent-gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.creditSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.githubIcon {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
