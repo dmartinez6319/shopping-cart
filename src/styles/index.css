@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+
+}
+
 :root {
   font-family: Montserrat, sans-serif;
 
@@ -14,6 +19,7 @@
   --border-subtle: #333333; /* For very thin, classy borders */
 
   color: var(--text-main);
+
 
 }
 

@@ -1,0 +1,72 @@
+* {
+    /* outline: solid red 1px; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50dvh; */
+    gap: 2rem;
+    
+}
+
+.displayText {
+    background-color: var(--accent-gold);
+    color: var(--text-dark);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 550px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopButton {
+    text-decoration: none;
+    border: solid 1px white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 300px;
+    cursor: pointer;
+    background-color: var(--accent-blue);
+    color: var(--text-main);
+    font-size: 1rem;
+    font-family: Montserrat;
+    max-width: 150px;
+    text-align: center;
+    transition: all 200ms;
+}
+
+.shopButton:hover {
+    transform: scale(1.1);
+}
+
+.displayImage {
+  width: 500px;
+  height: 500px;
+  background-color: var(--text-main); /* The color you WANT */
+  
+  /* The image acts as a stencil */
+  -webkit-mask-image: url('../assets/shopper.png');
+  mask-image: url('../assets/shopper.png');
+  
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        
+    }
+
+    .displayText {
+        max-width: none;
+        width: 100%;
+        border-radius: 0;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
