@@ -1,0 +1,43 @@
+
+
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-links {
+    display: flex;
+    gap: 1rem;
+    min-width: 400px;
+
+}
+
+/* Navbar.module.css */
+.cartIcon {
+  font-size: 1.5rem; /* or 24px, etc. */
+  color: var(--text-main);
+  transition: transform 0.2s ease;
+}
+
+.cartIcon:hover {
+    transform: scale(1.2); /* Makes it pop when hovered */
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 200ms;
+}
+
+.navLink:hover {
+    background-color: var(--bg-surface);
+    transform: scale(1.2); /* Makes it pop when hovered */
+}

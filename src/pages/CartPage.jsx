@@ -1,7 +1,7 @@
 const Cartpage = () => {
     return (
         <>
-        
+        cart
         </>
     )
 }

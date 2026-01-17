@@ -1,7 +1,7 @@
 const Storepage = () => {
     return (
         <>
-        
+        store
         </>
     )
 }
