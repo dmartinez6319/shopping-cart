@@ -43,7 +43,7 @@ main {
 .displayImage {
   width: 500px;
   height: 500px;
-  background-color: var(--text-main); /* The color you WANT */
+  background-color: var(--accent-gold); /* The color you WANT */
   padding: 1rem;
   display: flex;
   justify-content: center;
