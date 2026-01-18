@@ -1,6 +1,7 @@
 footer {
-    width: 100dvw;
-    border-top: solid 1px var(--accent-gold);
+    /* width: 100dvw; */
+    /* border-top: solid 1px var(--accent-gold); */
+    background-color: var(--bg-surface);
     display: flex;
     justify-content: center;
     align-items: center;

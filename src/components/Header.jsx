@@ -4,10 +4,10 @@ import Navbar from "./Navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Header = ( {cart} ) => {
     return (
         <header className={styles.header}>
-            <Navbar />
+            <Navbar cart={cart}/>
         </header>
     )
 }

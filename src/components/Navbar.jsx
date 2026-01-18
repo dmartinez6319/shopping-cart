@@ -4,7 +4,16 @@ import styles from "../styles/Navbar.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
+
+    const getTotalQuantity = () => {
+        let total = 0
+        for (let i = 0; i < cart.length; i++) {
+            total += cart[i].cartQuantity 
+        }
+        return total
+    }
+
     return (
         <nav className={styles.nav}>
             <div className={styles["text-links"]}>
@@ -16,6 +25,7 @@ const Navbar = () => {
 
                 <Link className={styles.navLink} to="cart">
                     <FontAwesomeIcon className={styles.cartIcon} icon={faCartShopping} />
+                    <p>{getTotalQuantity()}</p>
                 </Link>
 
             </div>

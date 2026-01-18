@@ -23,7 +23,7 @@ main {
     text-decoration: none;
     border: solid 1px white;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: .3rem;
     width: 300px;
     cursor: pointer;
     background-color: var(--accent-blue);
@@ -33,6 +33,7 @@ main {
     max-width: 150px;
     text-align: center;
     transition: all 200ms;
+    font-weight: bolder;
 }
 
 .shopButton:hover {
