@@ -1,0 +1,37 @@
+.cartContainer {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 6rem 0 6rem;
+}
+
+.itemContainer{
+    background-color: var(--bg-surface);
+    min-height: 800px;
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 2rem;
+
+}
+
+.checkoutContainer {
+    background-color: var(--bg-surface);
+    flex: 1;
+    padding: 2rem;
+    position: sticky;
+    height: auto;
+    top: 2rem;
+
+}
+
+.summaryContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalContainer {
+    display: flex;
+    justify-content: space-between;
+}

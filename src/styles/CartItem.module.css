@@ -1,0 +1,49 @@
+.cartCard {
+    padding: 2rem;
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cartCard img {
+    width: 200px;
+    height: 200px;
+    flex: 1;
+}
+
+.cartItemContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.cartItemInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartItemController {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    gap: 1rem;
+}
+
+.cartItemController button {
+    border: solid grey 1px;
+    /* background-color: var(--bg-surface); */
+    /* color: var(--text-muted); */
+    height: fit-content;
+    padding: .5rem;
+    width: 2rem;
+    background: transparent;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.cartItemController button:hover {
+    background: rgb(196, 79, 79);
+}
