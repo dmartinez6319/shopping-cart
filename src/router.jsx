@@ -3,7 +3,7 @@ import Homepage from "./pages/HomePage";
 import Storepage from "./pages/StorePage";
 import Cartpage from "./pages/CartPage";
 import Errorpage from "./pages/ErrorPage";
-import RootLayout from "./pages/Rootlayout";
+import RootLayout from "./pages/RootLayout";
 
 
 const router = createBrowserRouter([
