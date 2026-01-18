@@ -40,7 +40,6 @@ useEffect(() => {
             
             <div className={styles.cardContainer}>
                 {products.map((item) => {
-                    console.log(item)
                     return <Card 
                         item={item}
                         name={item.title} 

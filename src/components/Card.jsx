@@ -42,7 +42,7 @@ const Card = ( {item,name,description,price,image,setCart} ) => {
                 <p className={styles.cardPrice}>${price}</p>
             </div>
             <div className={styles.inputSection}>
-                <input type="number" value={quantity} onChange={handleQuantityChange}></input>
+                <input type="number" value={quantity} onChange={handleQuantityChange} min={1}></input>
                 <button className={styles.addCartButton} onClick={addItemToCart} >Add To Cart</button>
             </div>
         </div>

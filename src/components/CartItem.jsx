@@ -2,12 +2,18 @@ import styles from "../styles/CartItem.module.css"
 
 const CartItem = ( {cartItem,setCart,itemQuantity} ) => {
 
-        console.log(itemQuantity)
-    console.log(cartItem)
+
 
     const itemName = cartItem.title
     const itemPrice = cartItem.price
     const itemImage = cartItem.image
+
+    const handleRemoveItem = () => {
+        setCart((prevCart) => {
+            return prevCart.filter( (i) => i.cartItem.id !== cartItem.id)
+        })
+    }
+
     return (
         <div className={styles.cartCard}>
             <img src={itemImage} alt={itemName} />
@@ -18,7 +24,7 @@ const CartItem = ( {cartItem,setCart,itemQuantity} ) => {
                 </div>
                 <div className={styles.cartItemController}>
                     <p>{itemQuantity}x</p>
-                    <button>
+                    <button onClick={handleRemoveItem}>
                         X
                     </button>
                 </div>

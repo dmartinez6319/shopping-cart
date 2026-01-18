@@ -12,10 +12,10 @@ const Cartpage = () => {
         <main className={styles.cartContainer}>
             <div className={styles.itemContainer}>
                 {cart.map((item ) => {
-                    console.log(item.cartQuantity)
                     return <CartItem 
                         cartItem={item.cartItem}
                         itemQuantity={item.cartQuantity}
+                        setCart = {setCart}
                         key = {crypto.randomUUID()}
                     />
                 })}
