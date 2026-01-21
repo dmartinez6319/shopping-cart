@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Storepage.module.css"
 import Card from "../components/Card";
 import { useOutletContext } from "react-router";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Storepage = () => {
 
@@ -9,8 +10,14 @@ const Storepage = () => {
     const [products,setProducts] = useState([])
     const [loaded, setLoaded] = useState(false)
 
-useEffect(() => {
+    useEffect(() => {
     const getProducts = async () => {
+
+        await new Promise((resolve) => {
+            setTimeout(resolve, 1000);
+        })
+
+
         try {
             const response = await fetch('https://fakestoreapi.com/products')
 
@@ -31,7 +38,7 @@ useEffect(() => {
 
     if (!loaded) return (
         <main>
-            Loading
+            <LoadingSpinner />
         </main>
     )
 
